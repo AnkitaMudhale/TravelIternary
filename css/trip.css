@@ -1,0 +1,207 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #222;
+    color: #fff;
+    padding: 3em 1em 1em 1em;
+}
+
+h1{
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.search-bar{
+    margin: 1em auto;
+    background: #f7f2f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    max-width: 500px;
+    border-radius: 8px;
+    padding: 0 1em;
+    color: #fff;
+}
+
+.search-bar input{
+    flex-grow: 1;
+    height: 100%;
+    padding: 0.5em 0;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.3em;
+}
+
+.search-bar input::placeholder{
+    color: #b7b7b7;
+}
+
+.search-bar input:focus{
+    outline: none;
+}
+
+.panels{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    margin: 8em 0 5em 0;
+}
+
+.panel{
+    background: #3b383b;
+    padding: 1.5em 1.8em 1.5em 1.8em;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+.panel .material-symbols-outlined{
+    width: 1.6em;
+    height: 1.6em;
+    color: #111;
+    background: #fff82a;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.panel h2{
+    margin: 1em 0 0.5em 0;
+}
+
+.panel p{
+    font-size: 0.9em;
+    line-height: 25px;
+    color: #ccc;
+    margin: 0;
+}
+
+.panel a{
+    display: inline-block;
+    color: #fff;
+    margin-top: 1em;
+}
+
+.panel a:hover{
+    color: #fff82a;
+}
+
+div {
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  input[type="date"] {
+    background: var(--white);
+    padding: 10px 15px;
+    font-size: var(--fs-5);
+    border-radius: 50px;
+  }
+
+  input[type="date"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px #007bff;
+  }
+
+  .tour-search {
+    background: var(--bright-navy-blue);
+    padding-block: var(--section-padding);
+  }
+  
+  .tour-search-form .input-label {
+    color: var(--white);
+    font-size: var(--fs-4);
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .tour-search-form .input-field {
+    background: var(--white);
+    padding: 10px 15px;
+    font-size: var(--fs-5);
+    border-radius: 50px;
+    color: white; /* Setting input field text color to white */
+    background-color: #3d383c; /* Setting input field background color */
+    border: none; /* Remove default input field border */
+    border-radius: 8px; /* Adding border radius */
+    padding: 15px 20px;
+  }
+  
+  .tour-search-form .input-field::placeholder { color: var(--spanish-gray); }
+  
+  .tour-search-form .input-field::-webkit-datetime-edit {
+    color: var(--spanish-gray);
+    text-transform: uppercase;
+  }
+  
+  .tour-search-form .input-wrapper { margin-bottom: 15px; }
+  
+  .tour-search .btn {
+    width: 100%;
+    --border-width: 1px;
+    font-weight: var(--fw-600);
+    margin-top: 35px;
+  }
+
+  .tour-search-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-end;
+    gap: 15px;
+  }
+
+  .tour-search-form .input-wrapper { margin-bottom: 0; }
+
+  .tour-search-form .input-field { padding: 16px 20px; }
+
+  .tour-search .btn {
+    grid-column: span 2;
+    margin-top: 20px;
+  }
+
+  .tour-search-form { grid-template-columns: repeat(5, 1fr); }
+
+  .tour-search .btn {
+    --padding: 15px;
+    grid-column: unset;
+    margin-top: 0;
+  }
+
+  .tour-search-form {
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    gap: 15px; /* Add gap between elements */
+}
+
+.tour-search-form .input-wrapper {
+    flex: 1; /* Allow input wrappers to grow and fill available space */
+    max-width: 250px; /* Set maximum width for each input wrapper */
+}
+
+.tour-search-form .input-field {
+    width: 70%; /* Set input field width to 100% */
+}
+
+
+.cta .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta-content { width: calc(100% - 225px); }
+
+.cta .section-text { margin-inline: 0; }
+
+.cta .section-title { max-width: 25ch; }

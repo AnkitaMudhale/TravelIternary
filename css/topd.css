@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #03010a;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    /* Adjust padding as needed */
+}
+
+.place-container {
+    display: flex;
+    margin-bottom: 20px;
+    /* Adjust spacing between place containers */
+    margin-top: 20px;
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    transition: transform 0.5s ease;
+}
+
+.place-container:hover,
+.place-container.active {
+    transform: scale(1.05);
+}
+
+.image-container {
+    width: 600px;
+    /* Set width of image container */
+    margin-right: 10px;
+    /* Adjust spacing between image and text */
+
+}
+
+.image-container img {
+    max-width: 100%;
+    /* Ensure all images take up 100% of container width */
+    height: 8cm;
+    /* Set a fixed height for all images */
+    width: 11cm;
+    border-radius: 30px;
+    box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.9);
+}
+
+.text-container {
+    color: #ffffff;
+    font-size: 18px;
+    flex: 1;
+    /* Allow text container to grow to fill available space */
+    font-size: 15px;
+    /* Adjust text size as needed */
+    padding-right: 2cm;
+}
+
+
+.more-info {
+    display: none;
+    /* Hide additional information by default */
+    margin-top: 10px;
+    /* Adjust margin as needed */
+}
+
+.show-more {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    /* Make button a block element */
+    margin-top: 10px;
+    /* Adjust margin as needed */
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.show-more:hover {
+    background-color: #45a049;
+}
+
+/*buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f49e09;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #03010a;
+    transform: scale(1.05);
+}
+
+.btn:focus {
+    outline: none;
+}
+
+/* Animation for buttons */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.buttons .btn {
+    animation: fadeInUp 0.5s ease forwards;
+    opacity: 0;
+    animation-delay: 0.2s;
+}
+
+/* Animation for buttons */
+@keyframes slideInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    animation: slideInUp 2s ease forwards;
+    opacity: 0;
+    animation-delay: 0.5s;
+    /* Delay the animation */
+}
